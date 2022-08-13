@@ -19,10 +19,12 @@
                     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         </head>
         <body>
+            @include('commons.header')
             <div class="container">
                 @include('commons.error_messages')
                 @yield('content')
             </div>
+            @include('commons.footer')
             <!-- JQuery -->
             <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
             <!-- Bootstrap tooltips -->
