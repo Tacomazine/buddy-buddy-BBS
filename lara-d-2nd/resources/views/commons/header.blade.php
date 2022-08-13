@@ -9,7 +9,7 @@
                             <a class="btn btn-primary" href="#"><i class="fas fa-pencil-alt"></i>投稿する</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="far fa-smile fa-3x"></i></a>
+                            <a href="#" class="nav-link"><i class="far fa-smile fa-3x" title="マイページ"></i></a>
                         </li>
                     </ul>
                 </div>
