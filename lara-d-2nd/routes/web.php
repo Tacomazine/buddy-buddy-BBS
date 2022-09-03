@@ -11,9 +11,10 @@
 |
 */
 
+// ログインしているユーザーのみホーム画面に飛ばす
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware('auth');
 
 // ユーザー登録
 Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup');
@@ -26,3 +27,9 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 // ユーザー詳細画面
 Route::get('users/{id}','UsersController@show')->name('user.show');
+
+// ユーザープロフィール編集画面
+Route::get('users/{id}/edit','UsersController@edit')->name('user.edit');
+
+// ユーザープロフィールを更新
+Route::put('users/{id}','UsersController@update')->name('user.update');
