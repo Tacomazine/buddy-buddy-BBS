@@ -25,7 +25,7 @@
                 <br>
                 <p class="devise-link font-small text-center mt-3">
                     まだアカウントをお持ちでなければ⇨
-                    <a href="/signup">
+                    <a href="{{ route('signup') }}">
                         新規登録する
                     </a>
                 </p>

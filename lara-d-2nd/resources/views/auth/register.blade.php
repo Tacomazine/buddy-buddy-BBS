@@ -33,7 +33,7 @@
                 <br>
                 <p class="devise-link font-small text-center mt-3">
                     もうアカウントをお持ちでしたら⇨
-                    <a href="/login">
+                    <a href="{{ route('login') }}">
                         ログインする
                     </a>
                 </p>
